@@ -524,8 +524,8 @@ exports.syncPlaceMultipleHfOrders = async function syncPlaceMultipleHfOrders({cl
 }
 
 /**
- * @name modifyOrder
- * @description Modify order
+ * @name modifyHfOrder
+ * @description Modify Hf order
  * @updateTime 02/03/23
  * @param {Object}
  * - {String} symbol trading pairs such as，ETH-BTC
@@ -536,7 +536,7 @@ exports.syncPlaceMultipleHfOrders = async function syncPlaceMultipleHfOrders({cl
  * @return {Object} { code, success, data }
  */
 
-exports.modifyOrder = async function modifyOrder({symbol,clientOid,orderId,newPrice,newSize}) {
+exports.modifyOrder = async function modifyHfOrder({symbol,clientOid,orderId,newPrice,newSize}) {
   return await Http().POST('/api/v1/hf/orders/alter',{
     symbol,clientOid,orderId,newPrice,newSize
   });
