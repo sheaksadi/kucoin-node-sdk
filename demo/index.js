@@ -522,8 +522,8 @@ const syncPlaceMultipleHfOrdersResult = await API.rest.Trade.Orders.syncPlaceMul
 console.log(syncPlaceMultipleHfOrdersResult ,"syncPlaceMultipleHfOrdersResult---");
 
 /**
- * @name modifyOrder TODO
- * @description Modify order
+ * @name modifyHfOrder TODO
+ * @description Modify Hf order
  * @updateTime 02/03/23
  * @param {Object}
  * - {String} symbol trading pairs such as，ETH-BTC
@@ -534,7 +534,7 @@ console.log(syncPlaceMultipleHfOrdersResult ,"syncPlaceMultipleHfOrdersResult---
  * @return {Object} { code, success, data }
  */
 
-const modifyOrderResult = await API.rest.Trade.Orders.modifyOrder({
+const modifyHfOrderResult = await API.rest.Trade.Orders.modifyHfOrder({
   symbol:"ETH-BTC",
   clientOid:"clientOid",
   orderId:"5bd6e9286d99522a52e458de",
